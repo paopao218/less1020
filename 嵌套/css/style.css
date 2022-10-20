@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.public {
+  background-color: #ff0;
+}
+#navigation {
+  width: 400px;
+}
+#navigation ul {
+  background: #090;
+}
+#navigation ul li {
+  border: 1px solid #f00;
+}
+#navigation ul li a {
+  text-decoration: none;
+  background-color: #ff0;
+}
+#navigation ul li a:hover {
+  background: #09f;
+  color: #fff;
+}
+#navigation ul li span {
+  float: right;
+  background-color: #ff0;
+}

@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 800px;
+    // height: 700px;
+    margin:0 auto;
+}
+.public(@bac,@col,@flo){
+    width: 150px;
+    height: 300px;
+    background-color: @bac;
+    color:@col;
+    float:@flo;
+    font-size: 30px;
+    text-align: center;
+}
+.triangle(top,@wid,@col){
+    border-width: @wid;
+    border-color: @col transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+.triangle(left, @wid, @col){
+    border-width: @wid;
+    border-color: transparent @col transparent transparent;
+    border-style: dashed;
+}
+.triangle(bottom, @wid, @col){
+    border-width: @wid;
+    border-color: transparent transparent @col transparent;
+    border-style: dashed dashed solid dashed;
+}
+.triangle(right, @wid, @col){
+    border-width: @wid;
+    border-color: transparent transparent transparent @col;
+    border-style:dashed dashed dashed solid;
+}
+.triangle(@_,@wid:0px, @col:#f00){
+    width: 0px;
+    height:0px;
+    color:@col;
+    border-width: @wid;
+    // overflow: hidden;
+}
+.triangle_app{
+    .triangle(bottom,400px,#ff0);
+    margin-top:-400px;
+    
+}
+.c1{
+    width: 800px;
+    height: 50px;
+    background:#caf;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.c2{
+    .public(rgb(9, 43, 179),#fff,left);
+}
+.c3{
+    .public(rgb(156, 218, 57),#fff,left);
+}
+.c4{
+    .public(rgb(9, 43, 179),#fff,right);
+}
+.c5{
+    .public(rgb(156, 218, 57),#fff,right);
+    
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.public{
+    background-color: #ff0;
+}
+#navigation{
+    width: 400px;
+    // height: 200px;
+    ul{
+        background:#090;
+        li{
+            border:1px solid #f00;
+            a{
+                text-decoration: none;
+                .public;
+                &:hover{
+                    background:#09f;
+                    color:#fff;
+                }
+            }
+            span{
+                // display: inline-block;
+                float: right;
+                // margin-left:180px;
+                .public;
+            }
+        }
+    }
+}
